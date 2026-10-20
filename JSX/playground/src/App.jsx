@@ -1,6 +1,7 @@
 import Calculator from "./components/Calculator";
 import Counter from "./components/Counter";
 import Tasklist from "./components/TaskList";
+import Weather from "./components/Weather";
 
 export default function App() {
   return (
@@ -13,7 +14,10 @@ export default function App() {
         </p>
 
         <div className="grid grid-cols-3 w-auto items-start gap-6">
-          <Counter />
+          <div className="flex flex-col gap-6">
+            <Counter />
+            <Weather />
+          </div>
           <Tasklist />
           <Calculator />
         </div>
