@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "./Card.jsx";
 import TaskItem from "./TaskItem";
+import Button from "./Button.jsx";
 
 export default function Tasklist() {
   const [input, setInput] = useState("");
@@ -48,13 +49,8 @@ export default function Tasklist() {
                 onChange={(event) => setInput(event.target.value)}
               />
 
-              <button
-                type="submit"
-                className="flex h-11 shrink-0 items-center gap-2 rounded-xl bg-blue-700 px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-800 active:scale-95"
-              >
-                <span className="text-lg leading-none">+</span>
-                Toevoegen
-              </button>
+              <Button variant="primary">Toevoegen</Button>
+
             </form>
           </div>
 

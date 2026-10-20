@@ -1,9 +1,10 @@
+import Calculator from "./components/Calculator";
 import Counter from "./components/Counter";
 import Tasklist from "./components/TaskList";
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-slate-50 p-8">
+    <main className="min-h-screen bg-slate-50 p-6">
       <div className="m-8 text-center">
         <h1 className="mb-2 text-3xl font-bold text-slate-900">React</h1>
 
@@ -14,6 +15,7 @@ export default function App() {
         <div className="grid grid-cols-3 w-auto items-start gap-6">
           <Counter />
           <Tasklist />
+          <Calculator />
         </div>
       </div>
     </main>
