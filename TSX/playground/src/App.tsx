@@ -1,11 +1,11 @@
 import "./App.css";
-import Card from "./components/Card";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <>
-      <section>
-        <Card></Card>
+      <section className="grid grid-cols-3 m-4 gap-4">
+        <Counter />
       </section>
     </>
   );
